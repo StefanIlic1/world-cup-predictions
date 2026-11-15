@@ -1,0 +1,56 @@
+# ---- OS junk ----
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ---- Virtual environments ----
+# This repo currently carries two: ./.venv and ./src/.venv
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+
+# ---- Tooling / editors ----
+.vscode/
+.idea/
+*.swp
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+
+# ---- Local Claude Code settings (machine-specific) ----
+.claude/settings.local.json
+
+# ---- Secrets ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---- Notes ----
+# Data CSVs in src/{international_matches,world_cup_matches,elos,output,model_data}
+# are intentionally committed: output/ and model_data/ are pipeline artifacts, but
+# keeping them tracked lets notebooks 03 and 04 run without re-running 01 and 02.
