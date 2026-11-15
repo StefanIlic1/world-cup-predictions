@@ -169,7 +169,7 @@ model, three models, all in pure Python loops.
 
 ## Caveats
 
-- **Only 384 training matches.** Six World Cups is a small sample for a three-class problem;
+- **Elos calculated on tens of thousands of matches, but only ~400 pure training matches due to scarcity of world cups.**
   validation accuracy on a single 64-match tournament carries wide error bars.
 - **`home_team` in a World Cup is a fixture-listing convention**, not real home advantage (except
   for the actual hosts). The models learn whatever asymmetry is in the data regardless.
